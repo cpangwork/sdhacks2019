@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AWS Comprehend</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.556.0.min.js"></script>
+</head>
+<body> 
+        <div id="container" > 
+            <div class="wrapper">
+                <div id="header" >
+                        <div style="font-weight: bold;">Amazon comprehend</div>
+                        <div>What do you need form the journey?</div>
+                    </div> 
+                <div id="data" >
+                        <b>The data or journey you want to analysis </b>
+                        <br><label> Resource: </label>
+                        <br><textarea name="Resource"
+                            margin-left: auto;
+                            margin-right: auto;
+                            cols="48%" rows="50%">
+                            </textarea>
+                        <br>
+                            <input type="submit" Value="send">
+                            <input type="reset" Value="reset">
+                </div>
+                <div id="image" >
+                    <b><img src="https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png">
+                        </img></b>
+                    <br><img src="https://media.giphy.com/media/kDeS7kHsNvnBjyqrZm/giphy.gif"></img>
+                </div>
+                
+                <div id="end" >
+                    <p>
+                        <textarea name="End"
+                            display:block;
+                            text-align: center; 
+                            margin-left: auto;
+                            margin-right: auto;
+                            cols="48%" rows="50%">
+                        </textarea>
+                    </p>
+                </div>   
+            </div>
+        </div>
+    <script>
+        function submit(){
+            fetch('http://localhost:3000/data/'+document.getElementById('inputBox').value).then((resp) => {
+            console.log('testtests111'+resp);
+            console.log(resp);
+        })
+        }
+    </script>
+</body>
+</html>

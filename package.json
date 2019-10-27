@@ -1,0 +1,25 @@
+{
+  "name": "sd-hacks-2019",
+  "version": "1.0.0",
+  "description": "Welcome! This repository contains all materials for our Javascript workshop at SD Hacks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acmucsd/sd-hacks-2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acmucsd/sd-hacks-2019/issues"
+  },
+  "homepage": "https://github.com/acmucsd/sd-hacks-2019#readme",
+  "dependencies": {
+    "aws-sdk": "^2.556.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
